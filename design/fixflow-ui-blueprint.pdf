@@ -1,0 +1,705 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R] /Count 8 >>
+endobj
+2 0 obj
+<< /Type /Catalog /Pages 1 0 R >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 607 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(FIXFLOW) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Dieu phoi yeu cau bao tri thiet bi) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(BAN THIET KE GIAO DIEN VONG 1) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(Nhom 3 sinh vien | CSE122) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(Bao gom: sitemap, phan cong, bang kiem ke, wireframe va AI states) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 975 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(01  PRODUCT MAP) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Van de) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(Yeu cau bao tri gui qua chat/dien thoai, thieu thong tin va kho theo doi SLA.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(Giai phap) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(Tao ticket -> AI phan loai -> dieu phoi -> sua chua -> nghiem thu -> phan tich) Tj
+0 -16 Td
+(loi lap lai.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 584 Td
+(Dieu huong dung chung) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 542 Td
+(Logo | Dashboard | Tickets | Reports | Notifications | Profile | Settings) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 500 Td
+(Desktop: sidebar co dinh. Mobile: bottom navigation + nut hanh dong noi.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 928 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(02  TEAM SPLIT) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(SV1 - Nguoi yeu cau) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(1. Ticket Create | 2. My Tickets | 3. Ticket Detail) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(SV2 - Ky thuat vien) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(1. Work Queue | 2. Repair Detail | 3. Repair History) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 592 Td
+(SV3 - Dieu phoi va quan tri) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 550 Td
+(1. Dispatch Board | 2. SLA Monitor | 3. Asset Management) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 508 Td
+(Moi sinh vien phai lam HTML + CSS + JavaScript + data + responsive + Git +) Tj
+0 -16 Td
+(OBS.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 1321 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(03  SCREEN INVENTORY) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Màn hinh dung chung) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(index, login, register, forgot-password, profile, settings, notifications,) Tj
+0 -16 Td
+(403, 404) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 668 Td
+(Nguoi yeu cau) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 626 Td
+(requester-ticket-create | requester-my-tickets | requester-ticket-detail) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 584 Td
+(Ky thuat vien) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 542 Td
+(technician-work-queue | technician-repair-detail | technician-repair-history) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 500 Td
+(Quan ly) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 458 Td
+(manager-dispatch-board | manager-sla-monitor | manager-failure-insights) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 416 Td
+(Quan tri) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 374 Td
+(admin-asset-management | admin-issue-category-management |) Tj
+0 -16 Td
+(admin-user-management) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 324 Td
+(Tong vong 1: 19 man hinh doc lap.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 1105 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(04  SV1 - REQUESTER) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Ticket Create) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(Form: thiet bi, vi tri, mo ta loi, muc do, anh dinh kem. Validation + AI) Tj
+0 -16 Td
+(Classifier.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 668 Td
+(My Tickets) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 626 Td
+(KPI, danh sach, tim kiem, loc trang thai/SLA, empty state.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 584 Td
+(Ticket Detail) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 542 Td
+(Timeline trang thai, trao doi, huy ticket, danh gia sau hoan tat.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 500 Td
+(Wireframe) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 458 Td
+([Sidebar]  [Header: Search / Bell / User]) Tj
+0 -16 Td
+([Title + KPI cards]) Tj
+0 -16 Td
+([Table / Form /) Tj
+0 -16 Td
+(Timeline]) Tj
+0 -16 Td
+([Primary action: Tao yeu cau]) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 1003 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(05  SV2 - TECHNICIAN) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Work Queue) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(Hang doi ticket, loc ky nang/khu vuc/SLA, nhan viec, loading/empty.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(Repair Detail) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(Trang thai, checklist, vat tu, ghi chu, anh bang chung, luu cap nhat.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 592 Td
+(Repair History) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 550 Td
+(Lich su sua chua, tim kiem, loc, archive/export.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 508 Td
+(AI-2 Repair Checklist) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 466 Td
+(Nhap loai loi -> dang xu ly -> checklist -> giai thich -> sua/chap nhan/tu) Tj
+0 -16 Td
+(choi.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 997 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(06  SV3 - MANAGER + ADMIN) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(Dispatch Board) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(Gan ticket cho ky thuat vien bang drag/drop hoac modal; AI goi y assignee.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(SLA Monitor) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(KPI, canh bao sap qua han, qua han, filter, drill-down.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 592 Td
+(Asset Management) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 550 Td
+(CRUD thiet bi, trang thai tai san, lich su ticket, archive thay vi xoa cung.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 508 Td
+(Failure Insights) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 466 Td
+(AI tom tat loi lap lai, do chac chan, ly do, fallback thu cong.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 16 0 R >>
+endobj
+18 0 obj
+<< /Length 1353 >>
+stream
+q
+0.08 0.22 0.42 rg
+0 0 595 842 re f
+Q
+q
+0.10 0.72 0.65 rg
+0 790 595 52 re f
+Q
+BT
+/F1 24 Tf
+0.08 0.22 0.42 rg
+42 804 Td
+(07  AI + DEFINITION OF DONE) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 760 Td
+(AI-1 Ticket Classifier) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 718 Td
+(Mo ta loi -> loading -> nhom ky thuat + ly do -> chap nhan/sua/tu choi.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 676 Td
+(AI-2 Repair Checklist) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 634 Td
+(Loai loi -> loading -> checklist -> do chac chan -> luu vao repair detail.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 592 Td
+(AI-3 Failure Pattern) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 550 Td
+(Lich su ticket -> loading -> tom tat loi lap -> quyet dinh bao tri.) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 508 Td
+(Fallback bat buoc) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 466 Td
+(Khong du du lieu | AI chua chac chan | Thu lai | Chinh sua | Dung thu cong |) Tj
+0 -16 Td
+(Bao cao) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 416 Td
+(Done) Tj
+ET
+BT
+/F1 12 Tf
+0.10 0.13 0.20 rg
+42 374 Td
+(Wireframe desktop/mobile; HTML semantic; CSS responsive; JS;) Tj
+0 -16 Td
+(JSON/LocalStorage; validation; empty/loading/error; accessibility;) Tj
+0 -16 Td
+(branch/PR/review; OBS/README.) Tj
+ET
+q
+0.09 0.72 0.65 RG
+1 w
+42 32 511 1 re S
+Q
+BT
+/F1 8 Tf
+0.4 0.45 0.52 rg
+42 18 Td
+(FixFlow UI Blueprint - Vong 1) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 1 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 18 0 R >>
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000009 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000232 00000 n 
+0000000890 00000 n 
+0000001016 00000 n 
+0000002042 00000 n 
+0000002168 00000 n 
+0000003147 00000 n 
+0000003273 00000 n 
+0000004647 00000 n 
+0000004775 00000 n 
+0000005933 00000 n 
+0000006061 00000 n 
+0000007117 00000 n 
+0000007245 00000 n 
+0000008294 00000 n 
+0000008422 00000 n 
+0000009828 00000 n 
+trailer
+<< /Size 20 /Root 2 0 R >>
+startxref
+9956
+%%EOF
