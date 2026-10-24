@@ -1,0 +1,8 @@
+{
+  "tickets": [
+    {"id":"TK-1042","asset":"Máy chiếu P302","location":"Phòng P302","priority":"Cao","status":"Đang sửa","assignee":"Nguyễn Văn An","sla":86},
+    {"id":"TK-1038","asset":"Điều hòa A201","location":"Phòng A201","priority":"Trung bình","status":"Chờ phân công","assignee":"Chưa gán","sla":72},
+    {"id":"TK-1029","asset":"PC Lab 1","location":"Phòng máy 1","priority":"Thấp","status":"Hoàn tất","assignee":"Trần Minh Khoa","sla":100},
+    {"id":"TK-1021","asset":"Máy in tầng 2","location":"Hành chính","priority":"Cao","status":"Quá hạn","assignee":"Lê Hoàng","sla":112}
+  ]
+}
