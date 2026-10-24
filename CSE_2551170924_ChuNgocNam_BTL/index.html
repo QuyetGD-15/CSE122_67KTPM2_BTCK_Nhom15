@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>FixFlow — Yêu cầu bảo trì</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Điều hướng chính">
+      <a class="brand" href="#" data-view="overview" aria-label="FixFlow, trang tổng quan">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>fix<span>flow</span></span>
+      </a>
+      <div class="workspace-label">KHÔNG GIAN LÀM VIỆC</div>
+      <nav class="main-nav">
+        <button class="nav-link active" type="button" data-view="overview">
+          <span class="nav-icon" aria-hidden="true">▦</span><span>Tổng quan</span>
+        </button>
+        <button class="nav-link" type="button" data-view="tickets">
+          <span class="nav-icon" aria-hidden="true">▤</span><span>Yêu cầu của tôi</span>
+          <span class="nav-count" id="nav-count">0</span>
+        </button>
+        <button class="nav-link" type="button" data-view="create">
+          <span class="nav-icon" aria-hidden="true">+</span><span>Tạo yêu cầu</span>
+        </button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="help-icon" aria-hidden="true">?</span>
+          <strong>Cần trợ giúp?</strong>
+          <p>Liên hệ đội hỗ trợ nếu bạn cần hướng dẫn.</p>
+          <a href="mailto:hotro@fixflow.vn">Liên hệ hỗ trợ <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="profile-button" type="button" aria-label="Thông tin người dùng">
+          <span class="avatar">NA</span>
+          <span class="profile-copy"><strong>Nguyễn An</strong><small>Người yêu cầu</small></span>
+          <span class="profile-more" aria-hidden="true">···</span>
+        </button>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+        <div class="breadcrumb"><span>Không gian làm việc</span><span aria-hidden="true">/</span><strong id="page-name">Tổng quan</strong></div>
+        <div class="topbar-actions">
+          <span class="status-indicator"><i aria-hidden="true"></i> Hệ thống hoạt động</span>
+          <button class="icon-button notification-button" type="button" aria-label="Thông báo">
+            ♧<span class="notification-dot"></span>
+          </button>
+          <span class="avatar avatar-small">NA</span>
+        </div>
+      </header>
+      <main class="page-content">
+        <section class="view active" id="view-overview" aria-labelledby="overview-title">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow" id="current-date"></p>
+              <h1 id="overview-title">Chào buổi sáng, An <span aria-hidden="true">☀</span></h1>
+              <p class="subheading">Theo dõi và quản lý các yêu cầu bảo trì của bạn.</p>
+            </div>
+            <button class="button button-primary" type="button" data-view="create"><span aria-hidden="true">+</span> Tạo yêu cầu mới</button>
+          </div>
+          <div class="stats-grid" aria-label="Tổng quan yêu cầu">
+            <article class="stat-card">
+              <div class="stat-heading"><span>Tổng yêu cầu</span><span class="stat-icon purple" aria-hidden="true">▤</span></div>
+              <strong class="stat-value" id="stat-total">0</strong>
+              <span class="stat-caption">Tất cả yêu cầu đã gửi</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-heading"><span>Đang xử lý</span><span class="stat-icon blue" aria-hidden="true">◷</span></div>
+              <strong class="stat-value" id="stat-progress">0</strong>
+              <span class="stat-caption">Đang được đội ngũ xử lý</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-heading"><span>Chờ tiếp nhận</span><span class="stat-icon amber" aria-hidden="true">◌</span></div>
+              <strong class="stat-value" id="stat-pending">0</strong>
+              <span class="stat-caption">Sẽ được phân công sớm</span>
+            </article>
+            <article class="stat-card">
+              <div class="stat-heading"><span>Đã hoàn thành</span><span class="stat-icon green" aria-hidden="true">✓</span></div>
+              <strong class="stat-value" id="stat-completed">0</strong>
+              <span class="stat-caption">Yêu cầu đã được xử lý</span>
+            </article>
+          </div>
+          <section class="panel recent-panel" aria-labelledby="recent-title">
+            <div class="panel-heading">
+              <div><h2 id="recent-title">Yêu cầu gần đây</h2><p>Cập nhật mới nhất về các thiết bị của bạn</p></div>
+              <button class="text-button" type="button" data-view="tickets">Xem tất cả <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>MÃ YÊU CẦU</th><th>THIẾT BỊ</th><th>VẤN ĐỀ</th><th>NGÀY GỬI</th><th>TRẠNG THÁI</th><th></th></tr></thead>
+                <tbody id="recent-tickets"></tbody>
+              </table>
+            </div>
+            <div class="empty-state hidden" id="recent-empty">
+              <span class="empty-icon" aria-hidden="true">▤</span>
+              <strong>Chưa có yêu cầu nào</strong>
+              <p>Tạo yêu cầu đầu tiên để bắt đầu theo dõi tình trạng thiết bị.</p>
+              <button class="button button-primary button-small" type="button" data-view="create">Tạo yêu cầu</button>
+            </div>
+          </section>
+          <div class="notice-bar"><span aria-hidden="true">✦</span><p><strong>Mẹo nhỏ:</strong> Mô tả rõ dấu hiệu hỏng hóc sẽ giúp đội kỹ thuật xử lý yêu cầu nhanh hơn.</p></div>
+        </section>
+        <section class="view" id="view-tickets" aria-labelledby="tickets-title">
+          <div class="page-heading">
+            <div><p class="eyebrow">THEO DÕI</p><h1 id="tickets-title">Yêu cầu của tôi</h1><p class="subheading">Xem tiến độ và cập nhật các yêu cầu bảo trì.</p></div>
+            <button class="button button-primary" type="button" data-view="create"><span aria-hidden="true">＋</span> Tạo yêu cầu mới</button>
+          </div>
+          <section class="panel">
+            <div class="toolbar">
+              <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Tìm kiếm</span><input id="ticket-search" type="search" placeholder="Tìm theo mã, thiết bị hoặc vấn đề..."></label>
+              <label class="select-wrap"><span class="visually-hidden">Lọc theo trạng thái</span>
+                <select id="status-filter"><option value="all">Tất cả trạng thái</option><option value="Chờ tiếp nhận">Chờ tiếp nhận</option><option value="Đang xử lý">Đang xử lý</option><option value="Đã hoàn thành">Đã hoàn thành</option></select>
+              </label>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>MÃ YÊU CẦU</th><th>THIẾT BỊ</th><th>VẤN ĐỀ</th><th>MỨC ĐỘ</th><th>NGÀY GỬI</th><th>TRẠNG THÁI</th><th></th></tr></thead>
+                <tbody id="ticket-list"></tbody>
+              </table>
+            </div>
+            <div class="empty-state hidden" id="ticket-empty">
+              <span class="empty-icon" aria-hidden="true">⌕</span>
+              <strong id="ticket-empty-title">Không tìm thấy yêu cầu</strong>
+              <p id="ticket-empty-copy">Thử thay đổi từ khóa hoặc bộ lọc của bạn.</p>
+              <button class="text-button hidden" id="clear-filters" type="button">Xóa bộ lọc</button>
+            </div>
+          </section>
+        </section>
+        <section class="view" id="view-create" aria-labelledby="create-title">
+          <div class="page-heading">
+            <div><p class="eyebrow">YÊU CẦU BẢO TRÌ</p><h1 id="create-title">Tạo yêu cầu mới</h1><p class="subheading">Cung cấp thông tin để đội kỹ thuật hỗ trợ bạn.</p></div>
+          </div>
+          <div class="form-layout">
+            <form class="panel request-form" id="request-form" novalidate>
+              <div class="form-section-title"><span class="step-number">1</span><div><h2>Thông tin thiết bị</h2><p>Cho chúng tôi biết thiết bị nào đang gặp vấn đề.</p></div></div>
+              <div class="form-grid">
+                <label class="field field-full">Tên thiết bị <span class="required">*</span>
+                  <input id="asset-name" name="asset" required maxlength="80" placeholder="Ví dụ: Máy lạnh phòng A203">
+                  <small class="field-error" id="asset-error"></small>
+                </label>
+                <label class="field">Vị trí <span class="required">*</span>
+                  <input id="asset-location" name="location" required maxlength="100" placeholder="Ví dụ: Tòa A, tầng 2">
+                  <small class="field-error" id="location-error"></small>
+                </label>
+                <label class="field">Mức độ ưu tiên
+                  <select id="priority" name="priority"><option value="Bình thường">Bình thường</option><option value="Cao">Cao</option><option value="Khẩn cấp">Khẩn cấp</option></select>
+                </label>
+              </div>
+              <div class="form-divider"></div>
+              <div class="form-section-title"><span class="step-number">2</span><div><h2>Mô tả vấn đề</h2><p>Mô tả dấu hiệu và thời điểm bạn nhận thấy sự cố.</p></div></div>
+              <div class="form-grid">
+                <label class="field field-full">Loại vấn đề <span class="required">*</span>
+                  <select id="issue-category" name="category" required><option value="">Chọn loại vấn đề</option><option>Điện / nguồn</option><option>Cơ khí</option><option>Mạng / kết nối</option><option>Phần mềm</option><option>Vệ sinh / bảo dưỡng</option><option>Khác</option></select>
+                  <small class="field-error" id="category-error"></small>
+                </label>
+                <label class="field field-full">Mô tả chi tiết <span class="required">*</span>
+                  <textarea id="description" name="description" required minlength="10" maxlength="600" rows="5" placeholder="Mô tả biểu hiện, thời điểm xảy ra và những gì bạn đã thử..."></textarea>
+                  <span class="field-foot"><small class="field-error" id="description-error"></small><small id="description-count">0/600</small></span>
+                </label>
+              </div>
+              <div class="form-actions"><span class="required-note"><span class="required">*</span> Thông tin bắt buộc</span><div><button class="button button-quiet" type="reset">Xóa nội dung</button><button class="button button-primary" type="submit">Gửi yêu cầu <span aria-hidden="true">→</span></button></div></div>
+            </form>
+            <aside class="ai-card" aria-labelledby="ai-title">
+              <div class="ai-heading"><span class="ai-sparkle" aria-hidden="true">✦</span><div><p class="eyebrow">TRỢ LÝ THÔNG MINH</p><h2 id="ai-title">Gợi ý phân loại</h2></div><span class="beta-tag">BETA</span></div>
+              <p class="ai-intro">Dựa trên mô tả của bạn, FixFlow có thể gợi ý nhóm kỹ thuật phù hợp.</p>
+              <button class="button button-ai" id="ai-suggest" type="button"><span aria-hidden="true">✦</span> Phân tích vấn đề</button>
+              <div class="ai-result hidden" id="ai-result" aria-live="polite"></div>
+              <p class="ai-disclaimer">Gợi ý tự động chỉ mang tính tham khảo. Bạn luôn có thể chọn loại vấn đề phù hợp nhất.</p>
+            </aside>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer"><span>© 2026 FixFlow</span><span>Điều phối bảo trì, đơn giản hơn.</span></footer>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="detail-dialog" id="detail-dialog" aria-labelledby="detail-title">
+    <div class="dialog-header"><div><p class="eyebrow">CHI TIẾT YÊU CẦU</p><h2 id="detail-title">Thông tin yêu cầu</h2></div><button class="icon-button dialog-close" type="button" aria-label="Đóng">x</button></div>
+    <div id="detail-content"></div>
+    <div class="dialog-actions"><button class="button button-quiet dialog-close" type="button">Đóng</button><button class="button button-danger hidden" id="cancel-ticket" type="button">Hủy yêu cầu</button></div>
+  </dialog>
+</body>
+</html>
