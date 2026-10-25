@@ -3,6 +3,22 @@
     {"id":"TK-1042","asset":"Máy chiếu P302","location":"Phòng P302","priority":"Cao","status":"Đang sửa","assignee":"Nguyễn Văn An","sla":86},
     {"id":"TK-1038","asset":"Điều hòa A201","location":"Phòng A201","priority":"Trung bình","status":"Chờ phân công","assignee":"Chưa gán","sla":72},
     {"id":"TK-1029","asset":"PC Lab 1","location":"Phòng máy 1","priority":"Thấp","status":"Hoàn tất","assignee":"Trần Minh Khoa","sla":100},
-    {"id":"TK-1021","asset":"Máy in tầng 2","location":"Hành chính","priority":"Cao","status":"Quá hạn","assignee":"Lê Hoàng","sla":112}
+    {"id":"TK-1021","asset":"Máy in tầng 2","location":"Hành chính","priority":"Cao","status":"Quá hạn","assignee":"Lê Hoàng","sla":112},
+    {"id":"TK-1018","asset":"Camera cổng chính","location":"Cổng chính","priority":"Trung bình","status":"Chờ phân công","assignee":"Chưa gán","sla":44},
+    {"id":"TK-1017","asset":"Đèn hành lang B","location":"Hành lang B","priority":"Thấp","status":"Hoàn tất","assignee":"Nguyễn Văn An","sla":100},
+    {"id":"TK-1015","asset":"Bình nóng lạnh C203","location":"Phòng C203","priority":"Cao","status":"Đang sửa","assignee":"Lê Hoàng","sla":91},
+    {"id":"TK-1012","asset":"Router tầng 3","location":"Tủ mạng T3","priority":"Cao","status":"Đã nhận","assignee":"Trần Minh Khoa","sla":68},
+    {"id":"TK-1009","asset":"Quạt thông gió Lab 2","location":"Phòng máy 2","priority":"Trung bình","status":"Hoàn tất","assignee":"Nguyễn Văn An","sla":100},
+    {"id":"TK-1006","asset":"Máy chiếu P204","location":"Phòng P204","priority":"Cao","status":"Chờ phân công","assignee":"Chưa gán","sla":57},
+    {"id":"TK-1004","asset":"Laptop phòng họp","location":"Phòng họp A","priority":"Thấp","status":"Đang sửa","assignee":"Lê Hoàng","sla":83},
+    {"id":"TK-1001","asset":"Máy scan hành chính","location":"Hành chính","priority":"Trung bình","status":"Hoàn tất","assignee":"Trần Minh Khoa","sla":100},
+    {"id":"TK-0998","asset":"Điều hòa B102","location":"Phòng B102","priority":"Cao","status":"Quá hạn","assignee":"Nguyễn Văn An","sla":118},
+    {"id":"TK-0995","asset":"Ổ cắm phòng Lab","location":"Phòng máy 3","priority":"Cao","status":"Đã nhận","assignee":"Lê Hoàng","sla":63},
+    {"id":"TK-0991","asset":"Máy in thư viện","location":"Thư viện","priority":"Thấp","status":"Hoàn tất","assignee":"Nguyễn Văn An","sla":100},
+    {"id":"TK-0987","asset":"Loa hội trường","location":"Hội trường","priority":"Trung bình","status":"Chờ phân công","assignee":"Chưa gán","sla":39},
+    {"id":"TK-0984","asset":"Bộ phát Wi-Fi A","location":"Tầng 1","priority":"Cao","status":"Đang sửa","assignee":"Trần Minh Khoa","sla":88},
+    {"id":"TK-0981","asset":"Máy chiếu P101","location":"Phòng P101","priority":"Thấp","status":"Hoàn tất","assignee":"Lê Hoàng","sla":100},
+    {"id":"TK-0978","asset":"Bơm nước khu A","location":"Khu A","priority":"Cao","status":"Đã nhận","assignee":"Nguyễn Văn An","sla":61},
+    {"id":"TK-0975","asset":"Đèn sân trường","location":"Sân trường","priority":"Trung bình","status":"Hoàn tất","assignee":"Trần Minh Khoa","sla":100}
   ]
 }

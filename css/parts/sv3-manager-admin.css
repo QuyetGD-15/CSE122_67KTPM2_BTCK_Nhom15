@@ -1,0 +1,5 @@
+/* CSS riêng theo thành viên. Không sửa file của người khác. */
+/* ===== [SV3] MANAGER / ADMIN ===== */
+.manager-sla-warning{border-left:4px solid #f0ad4e}
+.manager-sla-overdue{border-left:4px solid #dc3545}
+.admin-asset-card{border-left:4px solid #6675d9}

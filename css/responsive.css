@@ -1,0 +1,16 @@
+/* Các quy tắc riêng cho màn hình nhỏ. Không dùng !important. */
+@media (max-width: 767.98px){
+  .sidebar{display:none}.mobile-nav{display:flex;position:sticky;bottom:0;z-index:10}
+  .page-title{font-size:1.5rem}.card{padding:1rem!important}.navbar .small{font-size:.72rem}.navbar .btn{font-size:.7rem}
+  .mobile-nav a{font-size:.8rem;text-decoration:none;color:var(--ff-primary)}
+  .stat-card .display-6{font-size:1.8rem}.table-responsive{font-size:.9rem}
+  .table-responsive table{min-width:720px}.row.g-3>[class*="col-"]{width:100%}
+}
+@media (max-width: 575.98px){
+  main{padding:.75rem!important}.form-control,.form-select,.btn{font-size:.9rem}
+  .d-flex.justify-content-between.align-items-center{align-items:flex-start!important;gap:.5rem}
+  .d-flex.justify-content-between.align-items-center .btn{white-space:nowrap}
+  .timeline{padding-left:1rem}.timeline-item:before{left:-1.4rem}
+}
+@media (min-width: 768px) and (max-width: 1023.98px){.sidebar{min-width:205px}.page-title{font-size:1.7rem}}
+@media print{.sidebar,.navbar,.mobile-nav,.btn{display:none!important}main{width:100%!important}.card{box-shadow:none;border:1px solid #ddd}}

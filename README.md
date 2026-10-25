@@ -30,7 +30,6 @@ project-root/
 
 Mở `index.html` ở thư mục gốc bằng Live Server. Trang này là landing page; bấm **Đăng nhập** để vào `pages/login.html`, sau đó vào `pages/dashboard.html`.
 
-Không mở trực tiếp `pages/dashboard.html` làm trang bắt đầu nữa; dashboard là màn hình sau đăng nhập.
 
 ## Công nghệ
 

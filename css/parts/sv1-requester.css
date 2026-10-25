@@ -1,0 +1,4 @@
+/* CSS riêng theo thành viên. Không sửa file của người khác. */
+/* ===== [SV1] REQUESTER ===== */
+.requester-ticket-card{border-left:4px solid var(--ff-teal)}
+.requester-ai-result{background:#eefaf8}

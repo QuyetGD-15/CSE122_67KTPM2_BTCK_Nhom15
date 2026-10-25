@@ -6,9 +6,10 @@ Tài liệu này giải thích cụ thể nhóm 3 sinh viên phải làm gì. �
 
 1. Mở thư mục repo bằng VS Code.
 2. Cài extension Live Server nếu máy đã có Internet.
-3. Chuột phải `pages/login.html` → Open with Live Server.
-4. Bấm Đăng nhập giả lập.
-5. Test lần lượt theo luồng:
+3. Chuột phải `index.html` ở thư mục gốc → Open with Live Server.
+4. Bấm **Bắt đầu sử dụng** rồi chọn **Đăng nhập**.
+5. Bấm Đăng nhập giả lập để vào `pages/dashboard.html`.
+6. Test lần lượt theo luồng:
    - Người yêu cầu tạo ticket.
    - Ticket xuất hiện trong My Tickets.
    - Mở chi tiết ticket.
@@ -165,7 +166,7 @@ feature/sv2-technician
 feature/sv3-manager-admin
 ```
 
-Commit nên đặt tên:
+Hướng dẫn Git chi tiết, lệnh tạo branch, push, Pull Request, review và merge nằm trong `docs/git-team-guide.md`.
 
 ```text
 feat: add requester ticket form
