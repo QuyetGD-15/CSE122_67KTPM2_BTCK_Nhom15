@@ -1,3 +1,90 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chi tiết TK-1042 - FixFlow</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/responsive.css"><link rel="stylesheet" href="../css/parts/sv1-requester.css"></head><body><nav class="navbar navbar-dark" style="background:#17365d"><div class="container-fluid"><a class="navbar-brand" href="dashboard.html">FixFlow</a><span class="text-white small">Xin chào, Nhóm 15 <a class="btn btn-sm btn-outline-light ms-2" href="login.html">Đăng xuất</a></span></div></nav><div class="container-fluid"><div class="row"><aside class="col-md-3 col-lg-2 sidebar p-3"><a class="navbar-brand text-primary d-block mb-3" href="dashboard.html">FixFlow</a><div class="small text-muted mb-2">Người yêu cầu</div><nav class="nav flex-column"><a class="nav-link " href="dashboard.html">Dashboard</a><a class="nav-link " href="requester-my-tickets.html">Tickets</a><a class="nav-link " href="technician-work-queue.html">Work queue</a><a class="nav-link " href="manager-dispatch-board.html">Điều phối</a><a class="nav-link " href="admin-asset-management.html">Thiết bị</a><a class="nav-link " href="notifications.html">Thông báo</a><a class="nav-link " href="profile.html">Hồ sơ</a></nav></aside><main class="col-md-9 col-lg-10 p-3 p-lg-4"><div class="d-flex justify-content-between align-items-center mb-4"><div><div class="text-muted small">FixFlow / Người yêu cầu</div><h1 class="h2 page-title">Chi tiết TK-1042</h1></div><button class="btn btn-outline-secondary btn-sm" onclick="alert('Thông báo mới: có 2 ticket cần xử lý')">🔔 Thông báo</button></div><div class="row g-4"><div class="col-lg-8"><div id="detailContent" class="card p-4"><div class="d-flex justify-content-between"><h2 class="h5" data-field="asset">Máy chiếu P302</h2><span class="badge bg-primary" data-field="status">Đang sửa</span></div><p class="text-muted"><span data-field="id">TK-1042</span> · <span data-field="location">Phòng P302</span> · Mức độ Cao</p><p class="mb-3" data-field="description">Máy chiếu không nhận tín hiệu HDMI.</p><hr><div class="timeline"><div class="timeline-item"><b>Đã nhận ticket</b><div class="small text-muted">18/10/2026 · Nguyễn Văn An</div></div><div class="timeline-item"><b>Đang kiểm tra cáp HDMI</b><div class="small text-muted">18/10/2026 · 10:45</div></div></div><textarea class="form-control mt-3" placeholder="Viết phản hồi..."></textarea><button class="btn btn-primary mt-2">Gửi phản hồi</button></div></div><div class="col-lg-4"><div class="card p-3"><h3 class="h6">Thông tin SLA</h3><div class="progress mb-2"><div class="progress-bar" style="width:86%">86%</div></div><small>Thời gian còn lại: 2 giờ 10 phút</small><button class="btn btn-outline-danger btn-sm mt-3">Hủy yêu cầu</button></div></div></div></main></div></div><nav class="mobile-nav bg-white border-top justify-content-around p-2"><a href="dashboard.html">Trang chủ</a><a href="requester-my-tickets.html">Tickets</a><a href="profile.html">Tôi</a></nav><script src="../js/app.js"></script></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi tiết TK-1042 - FixFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-tools"></i> FixFlow</a>
+            <span class="text-white small ms-auto me-3 d-none d-sm-inline">Nguyễn Minh Anh</span>
+            <a class="btn btn-sm btn-outline-light" href="login.html">Đăng xuất</a>
+        </div>
+    </nav>
 
+    <div class="container-fluid"><div class="row">
+        <aside class="col-md-3 col-lg-2 sidebar p-3 border-end bg-white">
+            <div class="small text-muted fw-bold mb-3 px-2">MENU</div>
+            <nav class="nav flex-column gap-1">
+                <a class="nav-link py-2" href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                <a class="nav-link active py-2" href="requester-my-tickets.html"><i class="bi bi-ticket-perforated me-2"></i>Yêu cầu của tôi</a>
+                <a class="nav-link py-2" href="notifications.html"><i class="bi bi-bell me-2"></i>Thông báo</a>
+                <a class="nav-link py-2" href="profile.html"><i class="bi bi-person me-2"></i>Hồ sơ</a>
+            </nav>
+        </aside>
 
+        <main class="col-md-9 col-lg-10 p-4">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <span class="badge bg-primary mb-1">Đang sửa</span>
+                                <h1 class="h4 fw-bold mb-0">Máy chiếu P302 (Không lên hình)</h1>
+                                <small class="text-muted">TK-1042 · Phòng P302, Tòa A</small>
+                            </div>
+                            <span class="badge bg-danger-subtle text-danger">Ưu tiên: Cao</span>
+                        </div>
+                        <hr>
+                        <h2 class="h6 fw-bold">Mô tả sự cố</h2>
+                        <p class="bg-light p-3 rounded small">Cắm cáp HDMI không nhận tín hiệu hình ảnh lên màn chiếu.</p>
+
+                        <h2 class="h6 fw-bold mt-4">Nhật ký xử lý</h2>
+                        <div class="ps-2">
+                            <div class="timeline-item small"><b>Tiếp nhận ticket</b> - 10:15 (KTV: Nguyễn Văn An)</div>
+                            <div class="timeline-item small"><b>Kiểm tra cáp HDMI</b> - 10:45 (Đang xử lý tại chỗ)</div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top">
+                            <textarea id="replyText" class="form-control mb-2" rows="2" placeholder="Nhập tin nhắn phản hồi..."></textarea>
+                            <button id="sendReply" class="btn btn-primary btn-sm"><i class="bi bi-send"></i> Gửi phản hồi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h2 class="h6 fw-bold mb-3"><i class="bi bi-clock-history text-primary"></i> Tiến độ SLA</h2>
+                        <div class="progress mb-2" style="height:8px"><div class="progress-bar bg-warning" style="width:86%"></div></div>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <small class="text-muted d-block">Thời gian còn lại:</small>
+                            <span class="fs-5 fw-bold text-danger">2 giờ 10 phút</span>
+                        </div>
+                        <button class="btn btn-outline-danger w-100 btn-sm" onclick="if(confirm('Hủy yêu cầu này?')) alert('Đã hủy!');">Hủy yêu cầu này</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div></div>
+
+    <nav class="mobile-nav bg-white border-top justify-content-around py-2">
+        <a href="index.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-house d-block fs-5"></i>Trang chủ</a>
+        <a href="requester-my-tickets.html" class="text-center text-decoration-none text-primary small"><i class="bi bi-ticket-perforated d-block fs-5"></i>Tickets</a>
+        <a href="profile.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-person d-block fs-5"></i>Tôi</a>
+    </nav>
+
+    <script>
+        document.getElementById('sendReply').onclick = () => {
+            const txt = document.getElementById('replyText');
+            if(!txt.value.trim()) return alert('Vui lòng nhập phản hồi.');
+            alert('Đã gửi phản hồi!');
+            txt.value = '';
+        };
+    </script>
+</body>
+</html>
