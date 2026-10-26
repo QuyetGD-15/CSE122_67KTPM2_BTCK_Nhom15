@@ -92,20 +92,6 @@
         <a href="requester-my-tickets.html" class="text-center text-decoration-none text-primary small"><i class="bi bi-ticket-perforated d-block fs-5"></i>Tickets</a>
         <a href="profile.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-person d-block fs-5"></i>Tôi</a>
     </nav>
-
-    <script>
-        document.getElementById('aiBtn').onclick = () => {
-            const desc = document.getElementById('issueDesc').value.trim();
-            if(!desc) return alert('Vui lòng nhập mô tả sự cố.');
-            document.getElementById('aiBox').classList.remove('d-none');
-            document.getElementById('aiText').innerHTML = `Đề xuất: <b>Điện - Thiết bị trình chiếu</b> (Độ chính xác 89%)`;
-        };
-        document.getElementById('ticketForm').onsubmit = (e) => {
-            e.preventDefault();
-            if(!e.target.checkValidity()) return e.target.classList.add('was-validated');
-            alert('Tạo ticket thành công!');
-            location.href = 'requester-my-tickets.html';
-        };
-    </script>
+<script src="../js/modules/requester.js"></script>
 </body>
 </html>
