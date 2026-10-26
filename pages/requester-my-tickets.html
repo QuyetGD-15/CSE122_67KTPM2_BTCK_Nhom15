@@ -1,78 +1,95 @@
 <!doctype html>
 <html lang="vi">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yêu cầu của tôi - FixFlow</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/responsive.css"><link rel="stylesheet" href="../css/parts/sv1-requester.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-dark" style="background:#17365d">
-        <div class="container-fluid"><a class="navbar-brand" href="dashboard.html">FixFlow</a><span
-                class="text-white small">Xin chào, Nhóm 15 <a class="btn btn-sm btn-outline-light ms-2"
-                    href="login.html">Đăng xuất</a></span></div>
-    </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <aside class="col-md-3 col-lg-2 sidebar p-3"><a class="navbar-brand text-primary d-block mb-3"
-                    href="dashboard.html">FixFlow</a>
-                <div class="small text-muted mb-2">Người yêu cầu</div>
-                <nav class="nav flex-column"><a class="nav-link " href="dashboard.html">Dashboard</a><a
-                        class="nav-link active" href="requester-my-tickets.html">Tickets</a><a class="nav-link "
-                        href="technician-work-queue.html">Work queue</a><a class="nav-link "
-                        href="manager-dispatch-board.html">Điều phối</a><a class="nav-link "
-                        href="admin-asset-management.html">Thiết bị</a><a class="nav-link "
-                        href="notifications.html">Thông báo</a><a class="nav-link " href="profile.html">Hồ sơ</a></nav>
-            </aside>
-            <main class="col-md-9 col-lg-10 p-3 p-lg-4">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div>
-                        <div class="text-muted small">FixFlow / Người yêu cầu</div>
-                        <h1 class="h2 page-title">Yêu cầu của tôi</h1>
-                    </div><button class="btn btn-outline-secondary btn-sm"
-                        onclick="alert('Thông báo mới: có 2 ticket cần xử lý')">🔔 Thông báo</button>
-                </div>
-                <div class="d-flex justify-content-end mb-3"><a class="btn btn-primary"
-                        href="requester-ticket-create.html">+ Tạo yêu cầu</a></div>
-                <div class="card p-3">
-                    <div class="row g-2 mb-3">
-                        <div class="col-md-7"><input id="ticketSearch" class="form-control"
-                                placeholder="Tìm theo mã, thiết bị, vị trí..."></div>
-                        <div class="col-md-5"><select id="statusFilter" class="form-select">
-                                <option value="">Tất cả trạng thái</option>
-                                <option>Chờ phân công</option>
-                                <option>Đang sửa</option>
-                                <option>Hoàn tất</option>
-                                <option>Quá hạn</option>
-                            </select></div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table align-middle">
-                            <thead>
-                                <tr>
-                                    <th>Mã</th>
-                                    <th>Thiết bị</th>
-                                    <th>Ưu tiên</th>
-                                    <th>Trạng thái</th>
-                                    <th>Phụ trách</th>
-                                    <th>SLA</th>
-                                </tr>
-                            </thead>
-                            <tbody id="ticketRows"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </main>
+    <nav class="navbar navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-tools"></i> FixFlow</a>
+            <span class="text-white small ms-auto me-3 d-none d-sm-inline">Nguyễn Minh Anh</span>
+            <a class="btn btn-sm btn-outline-light" href="login.html">Đăng xuất</a>
         </div>
-    </div>
-    <nav class="mobile-nav bg-white border-top justify-content-around p-2"><a href="dashboard.html">Trang chủ</a><a
-            href="requester-my-tickets.html">Tickets</a><a href="profile.html">Tôi</a></nav>
-    <script src="../js/app.js"></script>
+    </nav>
+
+    <div class="container-fluid"><div class="row">
+        <aside class="col-md-3 col-lg-2 sidebar p-3 border-end bg-white">
+            <div class="small text-muted fw-bold mb-3 px-2">MENU</div>
+            <nav class="nav flex-column gap-1">
+                <a class="nav-link py-2" href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                <a class="nav-link active py-2" href="requester-my-tickets.html"><i class="bi bi-ticket-perforated me-2"></i>Yêu cầu của tôi</a>
+                <a class="nav-link py-2" href="notifications.html"><i class="bi bi-bell me-2"></i>Thông báo</a>
+                <a class="nav-link py-2" href="profile.html"><i class="bi bi-person me-2"></i>Hồ sơ</a>
+            </nav>
+        </aside>
+
+        <main class="col-md-9 col-lg-10 p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h1 class="h4 fw-bold mb-0">Yêu cầu của tôi</h1>
+                <a class="btn btn-primary" href="requester-ticket-create.html"><i class="bi bi-plus-lg"></i> Tạo yêu cầu</a>
+            </div>
+
+            <div class="card border-0 shadow-sm p-3 mb-3">
+                <div class="row g-2">
+                    <div class="col-md-7"><input type="text" id="keyword" class="form-control" placeholder="Tìm kiếm mã, thiết bị, vị trí..."></div>
+                    <div class="col-md-3">
+                        <select id="status" class="form-select">
+                            <option value="">Tất cả trạng thái</option>
+                            <option>Chờ phân công</option>
+                            <option>Đang sửa</option>
+                            <option>Hoàn tất</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2"><button id="reset" class="btn btn-outline-secondary w-100">Xóa lọc</button></div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm table-responsive">
+                <table class="table align-middle hover mb-0" id="ticketTable">
+                    <thead class="table-light">
+                        <tr><th>Mã</th><th>Thiết bị</th><th>Vị trí</th><th>Ưu tiên</th><th>Trạng thái</th><th>SLA</th><th class="text-end pe-3">Thao tác</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold ps-3"><a href="requester-ticket-detail.html">TK-1042</a></td>
+                            <td>Máy chiếu P302</td><td>Phòng P302</td>
+                            <td><span class="badge bg-danger-subtle text-danger">Cao</span></td>
+                            <td><span class="badge bg-primary">Đang sửa</span></td>
+                            <td class="small text-muted"><i class="bi bi-clock"></i> Còn 2g 10p</td>
+                            <td class="text-end pe-3"><a href="requester-ticket-detail.html" class="btn btn-sm btn-outline-primary">Chi tiết</a></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold ps-3"><a href="requester-ticket-detail.html">TK-1039</a></td>
+                            <td>Điều hòa A201</td><td>Phòng A201</td>
+                            <td><span class="badge bg-warning-subtle text-warning">Trung bình</span></td>
+                            <td><span class="badge bg-secondary">Chờ phân công</span></td>
+                            <td class="small text-muted"><i class="bi bi-clock"></i> Còn 5g 30p</td>
+                            <td class="text-end pe-3"><a href="requester-ticket-detail.html" class="btn btn-sm btn-outline-primary">Chi tiết</a></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold ps-3"><a href="requester-ticket-detail.html">TK-1020</a></td>
+                            <td>Máy in Tầng 2</td><td>Tầng 2</td>
+                            <td><span class="badge bg-info-subtle text-info">Thấp</span></td>
+                            <td><span class="badge bg-success">Hoàn tất</span></td>
+                            <td class="small text-success"><i class="bi bi-check-circle"></i> Đúng hạn</td>
+                            <td class="text-end pe-3"><a href="requester-ticket-detail.html" class="btn btn-sm btn-outline-primary">Chi tiết</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div></div>
+
+    <nav class="mobile-nav bg-white border-top justify-content-around py-2">
+        <a href="index.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-house d-block fs-5"></i>Trang chủ</a>
+        <a href="requester-my-tickets.html" class="text-center text-decoration-none text-primary small"><i class="bi bi-ticket-perforated d-block fs-5"></i>Tickets</a>
+        <a href="profile.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-person d-block fs-5"></i>Tôi</a>
+    </nav>
+<script src="../js/modules/requester.js"></script>
 </body>
-
 </html>
-
-
