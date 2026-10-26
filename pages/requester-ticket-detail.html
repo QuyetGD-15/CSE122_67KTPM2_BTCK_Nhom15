@@ -77,14 +77,6 @@
         <a href="requester-my-tickets.html" class="text-center text-decoration-none text-primary small"><i class="bi bi-ticket-perforated d-block fs-5"></i>Tickets</a>
         <a href="profile.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-person d-block fs-5"></i>Tôi</a>
     </nav>
-
-    <script>
-        document.getElementById('sendReply').onclick = () => {
-            const txt = document.getElementById('replyText');
-            if(!txt.value.trim()) return alert('Vui lòng nhập phản hồi.');
-            alert('Đã gửi phản hồi!');
-            txt.value = '';
-        };
-    </script>
+<script src="../js/modules/requester.js"></script>
 </body>
 </html>
