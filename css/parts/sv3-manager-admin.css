@@ -1,5 +1,38 @@
-/* CSS riêng theo thành viên. Không sửa file của người khác. */
-/* ===== [SV3] MANAGER / ADMIN ===== */
-.manager-sla-warning{border-left:4px solid #f0ad4e}
-.manager-sla-overdue{border-left:4px solid #dc3545}
-.admin-asset-card{border-left:4px solid #6675d9}
+.manager-sla-warning {
+    border-left: 4px solid #f0ad4e;
+}
+
+.manager-sla-overdue {
+    border-left: 4px solid #dc3545;
+}
+
+.admin-asset-card {
+    border-left: 4px solid #6675d9;
+}
+
+.sv3-dispatch-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background: #fff;
+}
+
+.sv3-dispatch-row td {
+    vertical-align: middle;
+}
+
+.sv3-dispatch-row.is-overdue {
+    background: #fff5f5;
+}
+
+.sv3-assignment-panel {
+    border-left: 4px solid var(--ff-teal, #16a085);
+}
+
+.sv3-sla-kpi {
+    border-top: 4px solid var(--ff-teal, #16a085)
+}
+
+.sv3-asset-action {
+    min-width: 72px
+}
