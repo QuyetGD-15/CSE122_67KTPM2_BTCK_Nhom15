@@ -33,7 +33,7 @@ Mở `index.html` ở thư mục gốc bằng Live Server. Trang này là landin
 
 ## Công nghệ
 
-HTML, Bootstrap 5 CDN, CSS thuần, JavaScript thuần, LocalStorage và JSON mock. Không dùng framework hoặc build tool phức tạp.
+HTML, Bootstrap 5 CDN, CSS thuần, JavaScript thuần, LocalStorage và JSON mock.
 
 ## Tài liệu liên quan
 
