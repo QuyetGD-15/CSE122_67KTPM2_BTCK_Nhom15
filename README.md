@@ -38,6 +38,4 @@ HTML, Bootstrap 5 CDN, CSS thuần, JavaScript thuần, LocalStorage và JSON mo
 ## Tài liệu liên quan
 
 - `docs/screen-list.md`: bảng kiểm kê màn hình.
-- `docs/team-work-and-obs.md`: phân công 3 SV và kịch bản quay OBS.
-- `docs/README-MVP.md`: tình trạng tính năng và phần cần hoàn thiện.
 - `docs/fixflow-screen-inventory.xls`: bảng Excel giao diện.
