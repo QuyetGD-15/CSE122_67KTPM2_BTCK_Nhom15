@@ -4,7 +4,7 @@
 
 ### Đề tài: FIXFLOW – ĐIỀU PHỐI YÊU CẦU BẢO TRÌ THIẾT BỊ
 
-**Giảng viên hướng dẫn:** ........................................................  
+**Giảng viên hướng dẫn:** ThS. Kiều Tuấn Dũng  
 **Nhóm sinh viên thực hiện:** Nhóm 15  
 1. Phùng Sỹ Quyết – MSV: 2551170938 – Lớp: 67KTPM2  
 2. Chu Ngọc Nam – MSV: 2551170924 – Lớp: 67KTPM2  
