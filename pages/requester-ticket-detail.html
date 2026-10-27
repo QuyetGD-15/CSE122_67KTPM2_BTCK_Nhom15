@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chi tiết TK-1042 - FixFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-custom sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../index.html"><i class="bi bi-tools"></i> FixFlow</a>
+            <span class="text-white small ms-auto me-3 d-none d-sm-inline">Nguyễn Minh Anh</span>
+            <a class="btn btn-sm btn-outline-light" href="login.html">Đăng xuất</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid"><div class="row">
+        <aside class="col-md-3 col-lg-2 sidebar p-3 border-end bg-white">
+            <div class="small text-muted fw-bold mb-3 px-2">MENU</div>
+            <nav class="nav flex-column gap-1">
+                <a class="nav-link py-2" href="index.html"><i class="bi bi-speedometer2 me-2"></i>Dashboard</a>
+                <a class="nav-link active py-2" href="requester-my-tickets.html"><i class="bi bi-ticket-perforated me-2"></i>Yêu cầu của tôi</a>
+                <a class="nav-link py-2" href="notifications.html"><i class="bi bi-bell me-2"></i>Thông báo</a>
+                <a class="nav-link py-2" href="profile.html"><i class="bi bi-person me-2"></i>Hồ sơ</a>
+            </nav>
+        </aside>
+
+        <main class="col-md-9 col-lg-10 p-4">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <span class="badge bg-primary mb-1">Đang sửa</span>
+                                <h1 class="h4 fw-bold mb-0">Máy chiếu P302 (Không lên hình)</h1>
+                                <small class="text-muted">TK-1042 · Phòng P302, Tòa A</small>
+                            </div>
+                            <span class="badge bg-danger-subtle text-danger">Ưu tiên: Cao</span>
+                        </div>
+                        <hr>
+                        <h2 class="h6 fw-bold">Mô tả sự cố</h2>
+                        <p class="bg-light p-3 rounded small">Cắm cáp HDMI không nhận tín hiệu hình ảnh lên màn chiếu.</p>
+
+                        <h2 class="h6 fw-bold mt-4">Nhật ký xử lý</h2>
+                        <div class="ps-2">
+                            <div class="timeline-item small"><b>Tiếp nhận ticket</b> - 10:15 (KTV: Nguyễn Văn An)</div>
+                            <div class="timeline-item small"><b>Kiểm tra cáp HDMI</b> - 10:45 (Đang xử lý tại chỗ)</div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top">
+                            <textarea id="replyText" class="form-control mb-2" rows="2" placeholder="Nhập tin nhắn phản hồi..."></textarea>
+                            <button id="sendReply" class="btn btn-primary btn-sm"><i class="bi bi-send"></i> Gửi phản hồi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4">
+                        <h2 class="h6 fw-bold mb-3"><i class="bi bi-clock-history text-primary"></i> Tiến độ SLA</h2>
+                        <div class="progress mb-2" style="height:8px"><div class="progress-bar bg-warning" style="width:86%"></div></div>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <small class="text-muted d-block">Thời gian còn lại:</small>
+                            <span class="fs-5 fw-bold text-danger">2 giờ 10 phút</span>
+                        </div>
+                        <button class="btn btn-outline-danger w-100 btn-sm" onclick="if(confirm('Hủy yêu cầu này?')) alert('Đã hủy!');">Hủy yêu cầu này</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div></div>
+
+    <nav class="mobile-nav bg-white border-top justify-content-around py-2">
+        <a href="index.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-house d-block fs-5"></i>Trang chủ</a>
+        <a href="requester-my-tickets.html" class="text-center text-decoration-none text-primary small"><i class="bi bi-ticket-perforated d-block fs-5"></i>Tickets</a>
+        <a href="profile.html" class="text-center text-decoration-none text-muted small"><i class="bi bi-person d-block fs-5"></i>Tôi</a>
+    </nav>
+<script src="../js/modules/requester.js"></script>
+</body>
+</html>

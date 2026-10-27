@@ -1,0 +1,8 @@
+{
+  "assets": [
+    {"id":"AS-001","name":"Máy chiếu P302","category":"Thiết bị trình chiếu","location":"Phòng P302","status":"Đang dùng"},
+    {"id":"AS-002","name":"Điều hòa A201","category":"Thiết bị điện lạnh","location":"Phòng A201","status":"Bảo trì"},
+    {"id":"AS-003","name":"PC Lab 1","category":"Thiết bị máy tính","location":"Phòng máy 1","status":"Đang dùng"},
+    {"id":"AS-004","name":"Máy in tầng 2","category":"Thiết bị văn phòng","location":"Hành chính","status":"Đang dùng"}
+  ]
+}
